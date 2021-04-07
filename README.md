@@ -1,3 +1,38 @@
+1) Darknet 코드 실행
+2번에서 언급하였던 YOLOv4 모델을 가져와 google colab 환경에서 실행해보았다. input으로 넣을 이미지 jpg는 동네에서 직접 찍은 두 장의 사진이고, input image의 object를 어느정도 정확하게 인지하는지 확인해보았다. 실행 관련 코드와 순서 및 설명은 다음과 같다.
+
+![image](https://user-images.githubusercontent.com/81365281/113881135-1c278380-97f7-11eb-9712-7a26fc8b6426.png)
+![image](https://user-images.githubusercontent.com/81365281/113881141-1e89dd80-97f7-11eb-8b20-1a5314551b45.png)
+![image](https://user-images.githubusercontent.com/81365281/113881151-221d6480-97f7-11eb-8d3e-c9a38174ff9e.png)
+![image](https://user-images.githubusercontent.com/81365281/113881160-247fbe80-97f7-11eb-984a-78629d4675da.png)
+![image](https://user-images.githubusercontent.com/81365281/113881164-25b0eb80-97f7-11eb-81a0-f3cce913c3dc.png)
+![image](https://user-images.githubusercontent.com/81365281/113881167-277aaf00-97f7-11eb-8a1c-51a50b560e04.png)
+![image](https://user-images.githubusercontent.com/81365281/113881176-29447280-97f7-11eb-8767-b5b1005af78d.png)
+![image](https://user-images.githubusercontent.com/81365281/113881182-2b0e3600-97f7-11eb-8a66-ebeddefa03e6.png)
+
+테스트 이미지로 object detection을 해본 결과이다. 강아지, 사람, 말이 detection 되었으며 굉장히 빠른 시간내에 높은 정확도를 보여준다.
+
+![image](https://user-images.githubusercontent.com/81365281/113881222-35303480-97f7-11eb-8425-d24bb60e4d65.png)
+![image](https://user-images.githubusercontent.com/81365281/113881240-382b2500-97f7-11eb-911d-d30dcb4bf0ee.png)
+![image](https://user-images.githubusercontent.com/81365281/113881249-39f4e880-97f7-11eb-9f78-30dacb92c1f0.png)
+![image](https://user-images.githubusercontent.com/81365281/113881266-3bbeac00-97f7-11eb-87b2-591dee5fde16.png)
+첫 번째 방법으로 local 파일을 업로드 하려면 아래와 같이 'upload ()'를 실행하여 도우미 함수를 사용한다. 파일 선택을 클릭하고 cloud VM에 업로드 할 local machine의 이미지를 선택한다. 집 주변 도로에서 찍은 두 장의 사진으로 결과를 확인해보았다. 위의 사진과 같이 버스, 자동차, 사람, 신호등을 매우 높은 신뢰도로 검출하였다. 하지만 멀리 있는 신호등은 감지하지 못한다는 결과를 보여준다.
+![image](https://user-images.githubusercontent.com/81365281/113881289-411bf680-97f7-11eb-83a2-2a99a4530c85.png) ![image](https://user-images.githubusercontent.com/81365281/113881297-42e5ba00-97f7-11eb-8a25-2a7361f449b5.png)
+또 다른 사진으로 detection을 해본 결과, 자동차, 신호등, 사람이 검출 되었으며, 위와
+동일하게 빠른 시간내에 높은 신뢰도를 보여준다.
+
+![image](https://user-images.githubusercontent.com/81365281/113881320-49743180-97f7-11eb-9832-17d594788430.png)
+![image](https://user-images.githubusercontent.com/81365281/113881332-4c6f2200-97f7-11eb-9dbe-9f1d989010da.png)
+![image](https://user-images.githubusercontent.com/81365281/113881346-4f6a1280-97f7-11eb-9e5b-d9ac49c4a9ca.png)
+![image](https://user-images.githubusercontent.com/81365281/113881357-51cc6c80-97f7-11eb-8dab-436d93cd4fa6.png)
+![image](https://user-images.githubusercontent.com/81365281/113881364-542ec680-97f7-11eb-88f5-633ecd553f01.png)
+![image](https://user-images.githubusercontent.com/81365281/113881366-555ff380-97f7-11eb-8488-b581163d1c40.png)
+![image](https://user-images.githubusercontent.com/81365281/113881373-5729b700-97f7-11eb-8de4-401649b222b0.png)
+![image](https://user-images.githubusercontent.com/81365281/113881385-5a24a780-97f7-11eb-9478-b6def2db19d1.png)
+![image](https://user-images.githubusercontent.com/81365281/113881399-5c870180-97f7-11eb-8902-d4f2b3cfbad9.png)
+
+
+
 # Yolo v4, v3 and v2 for Windows and Linux
 
 ## (neural networks for object detection)
